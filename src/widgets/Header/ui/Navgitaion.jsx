@@ -12,7 +12,7 @@ const links = [
     children: "О нас",
   },
   {
-    path: "/a",
+    path: "/matrix-of-fate",
     children: "Матрица",
   },
   {
