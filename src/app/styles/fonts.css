@@ -1,0 +1,79 @@
+/* DM-Sans */
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../assets/fonts/DM-Sans/DMSans-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../assets/fonts/DM-Sans/DMSans-Regular.ttf);
+    font-weight: 400;
+}
+
+/* Futura */
+
+@font-face {
+    font-family: 'Futura';
+    src: url(../assets/fonts/Futura/Futura-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(../assets/fonts/Futura/Futura-Medium.ttf);
+    font-weight: 500;
+}
+
+/* Kanit */
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(../assets/fonts/Kanit/Kanit-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Poppins */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../assets/fonts/Open-Sans/OpenSans-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../assets/fonts/Open-Sans/OpenSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../assets/fonts/Open-Sans/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../assets/fonts/Open-Sans/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Prata */
+
+@font-face {
+    font-family: 'Prata';
+    src: url(../assets/fonts/Prata/Prata-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}

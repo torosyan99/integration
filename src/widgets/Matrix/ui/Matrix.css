@@ -1,0 +1,325 @@
+.matrix {
+    padding: 38px 20px 26px 0;
+}
+
+.matrix__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 48px;
+}
+
+.matrix__form {
+    max-width: 550px;
+    gap: 0 21px;
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    font-size: 15px;
+}
+
+.matrix__form-button,
+.matrix__birthday,
+.matrix__form-name {
+    text-wrap: nowrap;
+    padding: 10px 27px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+
+.matrix__form-button {
+    width: 137px;
+}
+
+
+.matrix__birthday {
+    width: 220px;
+}
+
+.matrix__birthday span {
+    font-family: "Futura";
+    color: var(--secondary-color);
+}
+
+.matrix__form-name span {
+    color: var(--secondary-color);
+}
+
+.matrix__form-name {
+    width: 151px;
+    text-align: start;
+}
+
+.matrix__name::placeholder {
+    color: var(--primary-color);
+}
+
+.matrix__card {
+    margin-top: 25px;
+}
+
+.matrix__card-title {
+    font-family: 'Prata';
+    font-size: 30px;
+}
+
+.matrix__table {
+    width: 640px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+.matrix__thead th {
+    padding: 15px;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    text-align: start;
+}
+
+.matrix__thead th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.matrix__thead th:nth-child(2) {
+    padding-right: 45px;
+    padding-left: 0;
+}
+
+.matrix__thead th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.matrix__table td {
+    text-align: center;
+    padding: 15px;
+}
+
+.matrix__table tr:last-child {
+    color: var(--secondary-color);
+}
+
+.matrix__table tr td:first-child {
+    text-align: start;
+}
+
+.matrix__table .matrix__name {
+    padding-right: 45px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 180px;
+}
+
+.matrix__list {
+    display: flex;
+    gap: 0 20px;
+    margin-top: 31px;
+}
+
+.matrix__item {
+    width: 100%;
+    padding: 13px 15px;
+    background-color: var(--background-color);
+    border-radius: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.matrix__item-title {
+    color: var(--secondary-color);
+}
+
+.matrix__item-text {
+    font-size: 11px;
+    margin-top: 5.5px;
+    margin-bottom: 4px;
+}
+
+.matrix__item-wrapper {
+    margin-top: auto;
+    position: relative;
+    max-width: 188px;
+    font-size: 9px;
+    width: 100%;
+}
+
+.matrix__item-box {
+    width: 39.36%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -40%;
+    gap: 0 5px;
+}
+
+.matrix__num {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+.matrix__num-absolute {
+    position: absolute;
+    right: 0;
+    top: -45%;
+}
+
+.matrix__flex {
+    display: flex;
+    margin-top: 20px;
+    gap: 0 4px;
+    align-items: center;
+}
+
+.matrix__flex .matrix__num {
+    position: static;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+}
+
+
+.matrix__flex>span {
+    font-size: 10px;
+}
+
+.matrix__num-direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-right: 8.5px;
+    padding-left: 2px;
+}
+
+.matrix__scheme {
+    width: 100%;
+    max-width: 552px;
+    transform: translateY(-10px);
+}
+
+
+
+@media (max-width:1250px) {
+
+    .matrix__table {
+        width: 500px;
+    }
+
+
+    .matrix__table td {
+        text-align: start;
+    }
+
+    .matrix__thead th:nth-child(2),
+    .matrix__thead th,
+    .matrix__table .matrix__name,
+    .matrix__table td {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width:1100px) {
+    .matrix__content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+
+    .matrix__table,
+    .matrix__card,
+    .matrix__wrapper {
+        width: 100%;
+    }
+
+    .matrix__scheme {
+        transform: none;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .matrix__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .matrix__item-text {
+        margin-bottom: 20px;
+    }
+
+    .matrix__item {
+        max-width: calc(50% - 20px);
+        flex-grow: 1;
+    }
+
+    .matrix__flex {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:768px) {
+
+    .matrix {
+        padding: 30px 0;
+    }
+
+    .matrix__table {
+        font-size: 12px;
+    }
+
+    .matrix__form {
+        gap: 0 10px;
+        font-size: 12px;
+    }
+
+    .matrix__form-name,
+    .matrix__birthday,
+    .matrix__form-button {
+        padding: 12px;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+
+    .matrix__table .matrix__name {
+        max-width: 120px;
+    }
+
+    .matrix__thead th:nth-child(2),
+    .matrix__thead th,
+    .matrix__table .matrix__name {
+        padding: 8px;
+    }
+
+    .matrix__item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+
+    .matrix__table {
+        font-size: 10px;
+    }
+
+    .matrix__form {
+        font-size: 10px;
+    }
+}

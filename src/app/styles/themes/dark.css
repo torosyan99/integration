@@ -1,0 +1,23 @@
+.app.dark {
+    --page-background: #001118;
+    --header-background: #00111880;
+
+    --primary-color: #fff;
+    --secondary-color: #F1DAB0;
+    --background-color: #ffffff0d;
+    --background-color-2: #ffffff0d;
+
+
+
+    --call-button-border: #ffd992;
+    --call-button-color: #ffd992;
+
+    --button-color: #000;
+    --button-color-2: #CC9739;
+    --button-background: linear-gradient(180.90deg, rgb(255, 208, 121) -57.64%, rgb(255, 232, 191) 16.652%, rgb(255, 208, 121) 87.913%);
+    --button-border-bottom: rgb(255, 190, 71);
+
+    --sidebar-link: #B1B1B1;
+
+    --scroll-track-thumb: linear-gradient(180.00deg, rgb(255, 208, 121) -91.57%, rgb(255, 232, 191) 6.041%, rgb(255, 208, 121) 99.668%);
+}

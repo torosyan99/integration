@@ -1,0 +1,73 @@
+.scheme-matrix {
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Futura';
+    font-weight: 500;
+}
+
+.scheme-matrix__circle div {
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    line-height: 0.88;
+    transform: translateX(-50%);
+
+}
+
+.scheme-matrix__circle .scheme-matrix__year {
+    font-size: 4px;
+    position: absolute;
+    text-align: center;
+    line-height: 0.88;
+    transform: translateX(-50%);
+
+}
+
+
+.scheme-matrix__circle .scheme-matrix__font {
+    font-family: 'Open Sans';
+    display: inline;
+    font-size: inherit;
+    text-align: center;
+}
+
+
+.scheme-matrix__circle .scheme-matrix--fz {
+    font-size: 6px;
+}
+
+
+
+
+
+
+
+/* Bottom-Right */
+
+
+@media (max-width:768px) {
+
+    .scheme-matrix__circle div {
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width:480px) {
+
+    .scheme-matrix__circle div {
+        font-size: 8px;
+    }
+
+    .scheme-matrix__circle .scheme-matrix__year {
+        font-size: 3px;
+
+
+    }
+
+    .scheme-matrix__circle .scheme-matrix--fz {
+        font-size: 4px;
+    }
+
+}

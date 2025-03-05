@@ -1,0 +1,129 @@
+.fate {
+    width: 100%;
+}
+
+.fate__form {
+    max-width: 550px;
+    gap: 0 21px;
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    font-size: 15px;
+}
+
+.fate__form-button,
+.fate__birthday,
+.fate__form-name {
+    text-wrap: nowrap;
+    padding: 10px 27px;
+    border-radius: 50px;
+    background-color: var(--background-color);
+}
+
+.fate__form-button {
+    width: 137px;
+}
+
+
+.fate__birthday {
+    width: 220px;
+    border: .5px solid var(--primary-color);
+    font-family: "Futura";
+    color: var(--secondary-color);
+}
+
+
+
+.fate__form-name span {
+    color: var(--secondary-color);
+}
+
+.fate__form-name {
+    width: 151px;
+    text-align: start;
+    border: .5px solid var(--primary-color);
+}
+
+.fate__name::placeholder {
+    color: var(--primary-color);
+}
+
+
+.fate__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37.48px;
+}
+
+.fate__text {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: .4px;
+}
+
+.fate__wrapper {
+    max-width: 640px;
+}
+
+.fate__title.title {
+    max-width: 500px;
+    font-size: 45px;
+}
+
+.fate__scheme {
+    margin-top: 44.28px;
+    padding: 30px;
+}
+
+@media (max-width:1500px) {
+    .fate__wrapper {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width:1050px) {
+
+    .fate__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fate__scheme {
+        padding: 20px;
+        margin: 30px auto 0;
+
+    }
+
+    .fate__wrapper {
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .fate__form {
+        gap: 0 10px;
+        font-size: 12px;
+    }
+
+    .fate__form-name,
+    .fate__birthday,
+    .fate__form-button {
+        padding: 12px;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .fate__text {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .fate__title.title {
+        font-size: 25px;
+    }
+
+}
+

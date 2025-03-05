@@ -1,0 +1,145 @@
+.tariffs {
+    padding: 38px 0 114px;
+}
+
+.tariffs__list {
+    margin-top: 58px;
+    display: flex;
+    gap: 0 32.26px;
+
+}
+
+.tariffs__item {
+    max-width: calc(33.33% - 20px);
+    flex-grow: 1;
+    padding: 50px 22px 77px;
+    position: relative;
+    background-color: var(--background-color);
+    border-radius: 48.95px;
+    border: 1px solid var(--secondary-color);
+}
+
+.tariffs__item-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--secondary-color);
+    line-height: 1.25;
+    letter-spacing: .6px;
+}
+
+.tariffs__item-flex {
+    margin-top: 44.64px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.25;
+    padding-bottom: 35.36px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.tariffs__price,
+.tariffs__people {
+    font-size: 18px;
+    font-weight: 500;
+    color: #B5AFAF;
+    text-align: center;
+    display: inline-block;
+}
+
+.tariffs__price {
+    width: 152px;
+}
+
+.tariffs__people {
+    color: var(--secondary-color);
+}
+
+.tariffs__price span,
+.tariffs__people span {
+    display: block;
+    font-size: 25px;
+    font-family: "Futura";
+    font-weight: 700;
+    color: #B5AFAF;
+}
+
+.tariffs__points {
+    display: flex;
+    flex-direction: column;
+    gap: 17px 0;
+    margin-top: 40.26px;
+}
+
+.tariffs__point {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 0 13.36px;
+    fill: var(--secondary-color);
+    stroke: var(--secondary-color);
+    line-height: 1.25;
+}
+
+.tariffs__point svg {
+    flex-shrink: 0;
+}
+
+.tariffs__button {
+    position: absolute;
+    font-size: 21.54px;
+    width: 215px;
+    height: 64px;
+    border-radius: 24.47px;
+    color: var(--button-color-2);
+    font-weight: 700;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+
+
+@media (max-width:1100px) {
+    .tariffs__list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 30px;
+    }
+
+    .tariffs__item {
+        max-width: calc(50% - 50px);
+    }
+}
+
+@media (max-width:768px) {
+    .tariffs {
+        padding-bottom: 40px;
+    }
+    .tariffs__item {
+        max-width: 100%;
+    }
+
+    .tariffs__item-title {
+        font-size: 25px;
+    }
+
+    .tariffs__text {
+        font-size: 16px;
+    }
+
+    .tariffs__item {
+        padding: 30px 20px 50px;
+    }
+
+    .tariffs__points {
+        margin-top: 25px;
+    }
+    .tariffs__price,.tariffs__people {
+        font-size: 15px;
+    }
+
+    .tariffs__button {
+        font-size: 18px;
+    }
+}

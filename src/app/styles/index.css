@@ -1,0 +1,70 @@
+@import url(./reset.css);
+@import url(./fonts.css);
+@import url(./themes/dark.css);
+
+body {
+    font-family: "Open Sans";
+
+}
+
+.overflow {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app {
+    min-height: 100vh;
+    background-color: var(--page-background);
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 40px;
+    font-family: 'Prata';
+    text-transform: uppercase;
+}
+
+.title span {
+    color: var(--secondary-color);
+}
+
+.row {
+    display: flex;
+}
+
+.row__content {
+    flex-grow: 1;
+}
+
+.row__content .container {
+    margin: 0 0 auto;
+    padding: 0 40px;
+    max-width: 1380px;
+}
+
+@media (max-width:1350px)  {
+    .row {
+        padding-bottom: 120px;
+    }
+
+    .row__content .container {
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:768px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .row {
+        padding-bottom: 250px;
+    }
+}

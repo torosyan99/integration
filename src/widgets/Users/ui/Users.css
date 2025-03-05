@@ -1,0 +1,32 @@
+.users {
+    padding: 16px 72px 16.63px 40px ;
+    border-bottom: 1px solid var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.users__all {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+
+.users__photo {
+    width: 60;
+    height: 60;
+    border-radius: 50%;
+}
+
+@media (max-width:1350px) {
+    .users {
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width:768px) {
+.users__photo {
+    width: 40.64px;
+    height: 40.64px;
+}
+}

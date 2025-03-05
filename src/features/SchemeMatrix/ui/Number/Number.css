@@ -1,0 +1,299 @@
+.num {
+    position: absolute;
+    border-radius: 50%;
+    font-family: sans-serif;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-size {
+    font-size: 25px;
+    width: 9.7%;
+    height: 9.7%;
+    z-index: 3;
+}
+
+.middle-size {
+    font-size: 18px;
+    width: 7.28%;
+    height: 7.28%;
+    z-index: 2;
+}
+
+.small-size {
+    font-size: 15px;
+    width: 5.15%;
+    height: 5.15%;
+    z-index: 1;
+}
+
+
+
+/* Top */
+.num-top-1 {
+    top: 0%;
+    left: 45.3%;
+}
+
+.num-top-2 {
+    top: 9.6%;
+    left: 46.6%;
+}
+
+.num-top-3 {
+    top: 16.80%;
+    left: 47.63%;
+}
+
+.num-top-4 {
+    top: 30.4%;
+    left: 47.63%;
+}
+
+/* Top-right */
+
+.num-top-right-1 {
+    top: 12.8%;
+    left: 76.3%;
+
+}
+
+.num-top-right-2 {
+    top: 20%;
+    left: 71.5%;
+}
+
+.num-top-right-3 {
+    top: 25.4%;
+    left: 68.5%;
+}
+
+/* Top-left */
+
+.num-top-left-1 {
+    left: 14%;
+    top: 13%;
+}
+
+.num-top-left-2 {
+    top: 20%;
+    left: 21%;
+}
+
+.num-top-left-3 {
+    top: 25.4%;
+    left: 26.40%;
+}
+
+.num-top-left-4 {
+    top: 31.8%;
+    left: 32.56%;
+}
+
+/* Center */
+
+.num-center {
+    top: 44%;
+    left: 45.3%;
+}
+
+.num-center-2 {
+    top: 45%;
+    left: 54.8%
+}
+
+/* Center-right */
+
+.num-center-right {
+    top: 44%;
+    right: 1.1%;
+}
+
+.num-center-right-2 {
+    top: 45%;
+    right: 10.4%;
+}
+
+
+.num-center-right-3 {
+    top: 46.25%;
+    right: 17.6%;
+}
+
+/* Center-left */
+
+.num-center-left {
+    top: 44%;
+    left: 1.3%;
+}
+
+.num-center-left-2 {
+    top: 45.2%;
+    left: 10.8%;
+}
+
+
+.num-center-left-3 {
+    top: 46.3%;
+    left: 17.9%;
+}
+
+.num-center-left-4 {
+    top: 46.5%;
+    left: 31.5%;
+}
+
+/* Bottom */
+
+.num-bottom-1 {
+    bottom: 2.9%;
+    left: 45.3%;
+}
+
+.num-bottom-2 {
+    bottom: 12.3%;
+    left: 46.4%;
+}
+
+.num-bottom-3 {
+    bottom: 19.1%;
+    left: 47.4%;
+}
+
+/* Bottom-right */
+
+.num-bottom-right-1 {
+    bottom: 15.3%;
+    left: 76.4%;
+}
+
+.num-bottom-right-2 {
+    bottom: 22.5%;
+    left: 71.5%;
+}
+
+.num-bottom-right-3 {
+    bottom: 27.7%;
+    left: 68.5%;
+}
+
+
+.num-bottom-right-4 {
+    bottom: 31.54%;
+    left: 65.6%;
+    width: 3.96%;
+    height: 3.96%;
+    font-size: 14px;
+}
+
+.num-bottom-right-5 {
+    bottom: 34.4%;
+    left: 63.2%;
+    width: 3.41%;
+    height: 3.41%;
+    font-size: 14px;
+}
+
+
+/* Bottom-left */
+
+.num-bottom-left-1 {
+    left: 14%;
+    bottom: 15.3%;
+}
+
+.num-bottom-left-2 {
+    bottom: 22.5%;
+    left: 21%;
+}
+
+.num-bottom-left-3 {
+    bottom: 27.9%;
+    left: 26.40%;
+}
+
+@media (max-width:768px) {
+
+    .big-size {
+        font-size: 18px;
+    }
+
+    .middle-size {
+        font-size: 14px;
+    }
+
+    .small-size {
+        font-size: 10px;
+    }
+
+    .num-bottom-right-4,
+    .num-bottom-right-5 {
+        font-size: 8px;
+    }
+}
+
+@media (max-width:550px) {
+    .small-size {
+        width: 5.45%;
+        height: 5.45%;
+    }
+
+    .num-bottom-left-1 {
+        bottom: 15.5%;
+    }
+
+    .num-bottom-right-1 {
+        bottom: 15.5%;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .big-size {
+        font-size: 14px;
+    }
+
+    .middle-size {
+        font-size: 12px;
+    }
+
+
+    .num-center-right-3 {
+        top: 46%;
+    }
+}
+
+
+@media (max-width:415px) {
+    .num-bottom-left-1 {
+        bottom: 15.8%;
+    }
+
+    .num-bottom-left-2 {
+        bottom: 22.8%;
+    }
+
+    .num-bottom-right-1 {
+        bottom: 15.8%;
+    }
+
+    .num-bottom-right-2 {
+        bottom: 22.8%;
+        left: 71.8%;
+    }
+
+    .num-bottom-3 {
+        bottom: 19.3%;
+    }
+
+}
+
+@media (max-width:390px) {
+    
+    .num-bottom-1 {
+        bottom: 3.2%;
+    }
+}

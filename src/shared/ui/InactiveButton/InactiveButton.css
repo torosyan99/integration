@@ -1,0 +1,5 @@
+.inactive-button {
+    border-radius: 10px;
+    background: var(    --background-color);
+    color: var(--primary-color);
+}

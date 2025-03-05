@@ -1,0 +1,124 @@
+.reviews {
+    padding: 38px 0 26px;
+}
+
+.reviews__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews__buttons {
+    display: flex;
+    gap: 0 20px;
+}
+
+.reviews__button {
+    width: 60px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    line-height: 0;
+}
+
+.reviews__button:disabled {
+    opacity: .5;
+}
+
+.reviews__swiper.swiper {
+    --swiper-pagination-bottom: 0;
+    --swiper-pagination-bullet-horizontal-gap:10px;
+   --swiper-pagination-bullet-width:14px;
+    --swiper-pagination-bullet-height:14px;
+    --swiper-pagination-color:var(--secondary-color);
+    --swiper-pagination-bullet-inactive-color:var(--background-color-2);
+    --swiper-pagination-bullet-inactive-opacity:1;
+    margin-top: 38px;
+    padding-bottom: 48px;
+}
+
+.reviews__slide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px 23px;
+}
+
+.reviews__item {
+    padding: 29.69px;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+    width: calc(33.33% - 23px);
+    flex-grow: 1;
+}
+
+.reviews__user-picture {
+    width: 59.39px;
+    height: 59.39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+
+.reviews__user {
+    display: flex;
+    gap: 0 17.82px;
+    align-items: center;
+}
+
+.reviews__name {
+    font-size: 18.73px;
+}
+
+.reviews__date {
+    display: block;
+    font-size: 11.02px;
+    color: #9F9F9F;
+}
+
+.reviews__text {
+    margin-top: 22.27px;
+    font-size: 13.22px;
+    line-height: 1.3;
+}
+
+.reviews__link {
+    margin-top: 31.12px;
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+    font-size: 13.12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0 7.42px;
+}
+
+@media (max-width:768px) {
+    .reviews__item {
+        padding: 15px;
+        width: calc(50% - 20px);
+    }
+
+    .reviews__button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviews__button svg {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .reviews__item {
+        width: 100%;
+    }
+    .reviews__text {
+        font-size: 14px;
+    }
+}
