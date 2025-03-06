@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { classNames } from "../../../shared/lib/classNames/classNames";
 
 const links = [
   {

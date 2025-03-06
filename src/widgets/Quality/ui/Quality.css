@@ -1,0 +1,141 @@
+.quality {
+    padding: 50px 0 131px;
+}
+
+.quality__basic-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 44px;
+}
+
+
+.quality__item {
+    padding: 21px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 15px;
+}
+
+.quality__basic-list .quality__item {
+    max-width: calc(33.33% - 14px);
+}
+
+.quality__text {
+    padding-top: 18.5px;
+    border-top: 1px solid var(--secondary-color);
+    margin-top: 11px;
+    font-size: 17px;
+    line-height: 1.3;
+}
+
+.quality__basic-top {
+    text-align: center;
+}
+
+.quality__num {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 39px;
+    font-family: 'Futura';
+    line-height: 1.33
+}
+
+.quality__basic-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33
+}
+
+.quality__additional {
+    margin-top: 50px;
+}
+
+.quality__additional-list {
+    margin-top: 38px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quality__additional-list .quality__item {
+    max-width: calc(25% - 15px);
+}
+
+.quality__additional-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quality__additional-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.quality__additional-subname {
+    font-size: 14;
+    margin-top: 6px;
+}
+
+.quality__additional .quality__num {
+    font-weight: 400;
+}
+
+@media (max-width:1700px) {
+
+    .quality__additional-list {
+        justify-content: center;
+    }
+
+    .quality__additional-list .quality__item {
+        max-width: calc(33.33% - 14px);
+    }
+}
+
+
+@media (max-width:1200px) {
+    .quality__basic-name {
+        font-size: 20px;
+    }
+
+    .quality__num {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .quality {
+        padding-bottom: 0;
+    }
+    .quality__additional-list .quality__item {
+        max-width: calc(50% - 10px);
+    }
+
+    .quality__basic-list .quality__item {
+        max-width: calc(50% - 10px);
+    }
+
+    .quality__additional-name {
+        font-size: 18px;
+    }
+
+    .quality__num {
+        font-size: 24px;
+    }
+
+    .quality__text {
+        font-size: 15px;
+    }
+
+    
+}
+
+@media (max-width:480px) {
+    .quality__additional-list .quality__item {
+        max-width: 100%;
+    }
+
+    .quality__basic-list .quality__item {
+        max-width: 100%;
+    }
+}

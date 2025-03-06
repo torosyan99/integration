@@ -20,3 +20,16 @@
     border: 0;
     color: var(--button-color-2);
 }
+
+@media (max-width:1700px) {
+    
+    .buttons {
+        flex-wrap: wrap;
+    }
+
+    .buttons__item {
+        flex-grow: 0;
+    }
+}
+
+

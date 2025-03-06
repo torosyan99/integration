@@ -1,0 +1,88 @@
+.financial-cod {
+    padding: 50px 0 61px;
+}
+
+.financial-cod__title {
+    color: var(--secondary-color);
+}
+
+.financial-cod__content {
+    margin-top: 18px;
+    display: flex;
+    gap:  20px;
+    align-items: flex-end;
+}
+
+.financial-cod__box {
+    padding: 18px 23px;
+}
+
+.financial-cod__left {
+    max-width: 530px;
+    width: 100%;
+}
+
+.financial-cod__left .financial-cod__box {
+
+    margin-top: 10px;
+}
+
+.financial-cod__box-title {
+    color: var(--secondary-color);
+    font-size: 23px;
+}
+
+.financial-cod__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.financial-cod__item {
+    display: flex;
+}
+
+.financial-cod__item.between {
+    justify-content: space-between;
+}
+
+.financial-cod__right {
+    flex-grow: 1;
+}
+
+@media (max-width:1300px) {
+    .financial-cod__item {
+        font-size: 18px;
+    }
+
+    .financial-cod__box-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:950px) {
+    .financial-cod__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .financial-cod__left,
+    .financial-cod__right {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width:768px) {
+    
+    .financial-cod__item {
+        font-size: 16px;
+    }
+
+    .financial-cod {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,30 @@
+.point {
+    display: flex;
+    gap: 0 14px;
+    align-items: center;
+}
+
+.point__num {
+    text-align: center;
+    min-width: 56px;
+    font-family: "Prata";
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+
+.point__value {
+    max-width: 107px;
+    font-size: 20px;
+    line-height: 1.33;
+}
+
+@media (max-width:768px) {
+
+    .point__num {
+        font-size: 35px;
+    }
+    
+    .point__value {
+        font-size: 16px;
+    }
+}

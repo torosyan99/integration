@@ -9,7 +9,7 @@ const MatrixOfFate = () => {
   return (
     <section className="fate">
       <Form />
-      {/* <Buttons /> */}
+      <Buttons />
       <div className="fate__content">
         <div className="fate__wrapper">
           <h3 className="title fate__title">

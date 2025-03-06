@@ -1,0 +1,55 @@
+.matrix-table {
+    padding-top: 45px;
+}
+
+.matrix-table__top {
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    gap: 20px 70px;
+}
+
+.matrix-table__box {
+    text-align: center;
+    padding: 8px 42px;
+}
+
+.matrix-table__title {
+    color: var(--secondary-color);
+}
+
+.matrix-table__content .table__num {
+    color: var(--green);
+}
+
+
+@media (max-width:1000px) {
+
+    .matrix-table__title {
+        width: 100%;
+    }
+
+    .matrix-table__top {
+        gap: 20px;
+    }
+
+    .matrix-table__box {
+        max-width: calc(50% - 10px);
+    }
+
+    .matrix-table__top {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:900px) {
+    .matrix-table__box {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:840px) {
+    .matrix-table__box {
+       max-width: 100%;
+    }
+}

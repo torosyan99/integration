@@ -2,60 +2,26 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { classNames } from "../../../shared/lib/classNames/classNames";
 import Sprite from "../../../shared/ui/Sprite/Sprite";
+import { links } from "../config/links";
 
 import "./Sidebar.css";
-
-const links = [
-  {
-    icon: "sidebar-home",
-    value: "Личный кабинет",
-    path: "/",
-  },
-  {
-    icon: "sidebar-transfer",
-    path: "/matrix-of-fate",
-    value: "Матрица судьбы",
-  },
-  {
-    icon: "sidebar-transfer",
-    path: "/",
-    value: "Дизайн человека",
-  },
-  {
-    icon: "sidebar-user",
-    path: "/",
-    value: "Квадрат Пифагора",
-  },
-  {
-    icon: "sidebar-investment",
-    path: "/",
-    value: "Сюцай",
-  },
-  {
-    icon: "sidebar-card",
-    path: "/",
-    value: "Тарифы",
-  },
-  {
-    icon: "sidebar-setting",
-    path: "/",
-    value: "Настройки",
-  },
-];
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <h2 className="sidebar__title">Интеграция</h2>
       <nav className="sidebar__links">
-        {links.map(({ icon, path, value }) => (
+        {links.map(({ icon, path, value, display, mobile }) => (
           <NavLink
-            className={classNames("sidebar__link")}
+            className={classNames("sidebar__link", [], {
+              display,
+              mobile,
+            })}
             key={value}
             to={path}
           >
             <Sprite icon={icon} width={25} height={25} />
-            {value}
+            <p className="sidebar__value">{value}</p>
           </NavLink>
         ))}
       </nav>

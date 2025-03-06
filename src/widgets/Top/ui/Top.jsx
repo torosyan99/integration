@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../../shared/ui/Button/Button";
+import Date from "./Date";
 
-import darkPhoto from "../assets/dark-photo.png";
 
 import "./Top.css";
 
@@ -19,13 +19,12 @@ const Top = () => {
               мудрое руководство по раскрытию своего потенциала
             </p>
             <div className="top__wrapper">
-              <div className="top__date">01.02.2003</div>
+              <Date />
               <div className="top__button-wrapper">
                 <Button className={"top__button"}>Разгадать судьбу</Button>
               </div>
             </div>
           </div>
-          <img className="top__background" src={darkPhoto} alt="background" />
       </div>
     </section>
   );

@@ -7,10 +7,7 @@ body {
 
 }
 
-.overflow {
-    height: 100vh;
-    overflow: hidden;
-}
+
 
 .app {
     min-height: 100vh;
@@ -48,7 +45,7 @@ body {
     max-width: 1380px;
 }
 
-@media (max-width:1350px)  {
+@media (max-width:1350px) {
     .row {
         padding-bottom: 120px;
     }
@@ -57,7 +54,18 @@ body {
         padding: 0 20px;
         margin: 0 auto;
     }
+
+
 }
+
+@media (max-width:1100px) {
+    .overflow {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+
 
 @media (max-width:768px) {
     .title {
