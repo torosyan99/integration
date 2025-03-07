@@ -18,7 +18,7 @@ const Design = () => {
       <Buttons />
       <div className="design__content">
         <Info />
-        <DesignPerson />
+        <DesignPerson className='design__person' />
       </div>
     </section>
   );

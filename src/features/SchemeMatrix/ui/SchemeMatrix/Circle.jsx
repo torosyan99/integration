@@ -1,6 +1,6 @@
 import React from "react";
 
-const Circle = ({children}) => {
+const Circle = ({ children }) => {
   return (
     <div className="scheme-matrix__circle">
       <div

@@ -1,5 +1,5 @@
 .sidebar {
-    min-width: 310px;
+    width: 310px;
     min-height: 100vh;
     padding: 22.5px 0 22.5px;
     border-right: 0.5px var(--secondary-color) solid;
@@ -21,13 +21,16 @@
 
 .sidebar__link {
     white-space: nowrap;
-
     display: flex;
     color: var(--sidebar-link);
     fill: var(--sidebar-link);
     align-items: center;
     gap: 0 26px;
     padding: 19.5px 64px 19.5px 44px;
+}
+
+.sidebar__link svg {
+    flex-shrink: 0;
 }
 
 .sidebar__link.active {

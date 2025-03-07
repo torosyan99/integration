@@ -1,9 +1,14 @@
 .design-person {
     position: relative;
+    display: flex;
 }
 
-.design-person svg {
+.design-person svg:not(.design-person__graph) {
     flex-shrink: 0;
+}
+
+.design-person__graph {
+    flex-shrink: 1;
 }
 
 .design-person__unconscious {
@@ -115,22 +120,142 @@
     transform: translateX(-50%);
 }
 
-.design-person__num-p {
+.design-person__head-3 {
+    width: 13.20%;
+    height: 12%;
+    left: 50%;
+    top: 30.9%;
+    transform: translateX(-50%);
+}
+
+.design-person__center-1 {
+    width: 13.20%;
+    height: 13.20%;
+    left: 50%;
+    top: 47.9%;
+    transform: translateX(-50%);
+}
+
+.design-person__center-2 {
+    width: 8%;
+    height: 8%;
+    left: 57%;
+    top: 60.9%;
+}
+
+
+.design-person__center-3 {
+    width: 13.20%;
+    height: 13.20%;
+    left: 50%;
+    top: 68.9%;
+    transform: translateX(-50%);
+}
+
+
+.design-person__center-4 {
+    width: 10.5%;
+    height: 12.7%;
+    right: 25%;
+    top: 68.9%;
+}
+
+
+.design-person__center-5 {
+    width: 10.5%;
+    height: 12.7%;
+    left: 25%;
+    top: 68.9%;
+}
+
+
+.design-person__center-6 {
+    width: 10.6%;
+    height: 10.6%;
+    left: 50%;
+    bottom: 3.9%;
+    transform: translateX(-50%);
+}
+
+
+.design-person__line {
     position: absolute;
-    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.design-person__line.column {
+    flex-direction: column;
+}
+
+.design-person__num-p {
     font-size: 6px;
     font-weight: 500;
     color: #050606;
-}
-
-.design-person__num-p.background {
-    padding: 2.73px;
-    border-radius: 50px;
+    font-weight: 700;
+    flex-shrink: 0;
+    width: 11px;
+    height: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.design-person__num-p.end {
+    margin-left: auto;
+}
+
+.design-person__num-p.absolute {
+    position: absolute;
+}
+
+.design-person__num-p.background {
+    border-radius: 50px;
     color: #fff;
     background: linear-gradient(90.00deg, rgb(71, 118, 230), rgb(142, 84, 233) 100%);
+}
+
+.design-person__wrapper {
+
+    height: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 14.68px;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    right: 20%;
+}
+
+.design-person__wrapper-top {
+    display: flex;
+    gap: 0 8px;
+}
+
+.design-person__character {
+    display: flex;
+    gap: 0 1.68px;
+}
+
+.design-person__character-icon {
+    position: relative;
+
+}
+
+.design-person__character-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 10px;
+}
+
+.design-person__character-name {
+    font-size: 9px;
+    text-align: center;
 }
 
 @media (max-width:480px) {
@@ -138,4 +263,86 @@
     .design-person__num-p {
         font-size: 5px;
     }
+}
+
+
+@media (max-width:550px) {
+
+    .design-person__num {
+        font-size: 14px;
+        width: 20px;
+    }
+
+
+    .design-person__item {
+        gap: 0 3px;
+    }
+    .design-person__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .design-person__icon svg {
+        width: 10px;
+        height: 10px;
+    }
+
+    .design-person__num-p {
+        font-size: 4px;
+    }
+
+    .design-person__wrapper {
+        font-size: 14px;
+        left: 22%;
+        right: 22%;
+    }
+
+    .design-person__character-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .design-person__wrapper {
+        gap: 7px ;
+    }
+
+    .design-person__subtitle {
+        font-size: 8px;
+    }
+    .design-person__title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:450px) {
+ 
+    .design-person__num {
+        font-size: 10px;
+    }
+
+    .design-person__column {
+        margin-top: 5px;
+        gap: 1.5px;
+    }
+
+    .design-person__wrapper {
+        font-size: 10px;
+        left: 22%;
+        right: 22%;
+        top: 7%;
+    }
+
+    .design-person__character-name {
+        font-size: 7px;
+    }
+
+    .design-person__character-num {
+        font-size: 7px;
+    }
+
+    .design-person__character-icon {
+        width: 16px;
+        height: 16px;
+    }
+
 }
