@@ -4,7 +4,7 @@ import { classNames } from "../../../shared/lib/classNames/classNames";
 const Number = ({ children, absolute, background, end, ...other }) => {
   return (
     <div
-      className={classNames("design-person__num-p", [], {
+      className={classNames("design-person__num", [], {
         background,
         end,
         absolute,

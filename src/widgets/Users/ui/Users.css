@@ -1,8 +1,9 @@
 .users {
-    padding: 16px 72px 16.63px 40px ;
+    padding: 16px 72px 16.63px 40px;
     border-bottom: 1px solid var(--secondary-color);
     display: flex;
     justify-content: space-between;
+    gap: 0 10px;
 }
 
 .users__all {
@@ -25,8 +26,9 @@
 }
 
 @media (max-width:768px) {
-.users__photo {
-    width: 40.64px;
-    height: 40.64px;
-}
+    .users__photo {
+        width: 40.64px;
+        height: 40.64px;
+    }
+
 }

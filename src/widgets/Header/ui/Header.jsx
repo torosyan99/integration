@@ -24,7 +24,12 @@ const Header = () => {
 
     document.addEventListener("click", checkClick);
 
-    return () => document.removeEventListener("click", checkClick);
+    return () => {
+      if (document.body.classList.contains("overflow")) {
+        document.body.classList.remove("overflow");
+      }
+      document.removeEventListener("click", checkClick);
+    };
   }, []);
 
   return (

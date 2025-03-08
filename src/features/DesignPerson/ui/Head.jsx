@@ -18,31 +18,31 @@ const Head = () => {
         </Line>
       </Box>
       <Box className={"design-person__head-2"} src={head_2}>
-        <Line left={"20%"} right={"20%"} top={"12%"}>
+        <Line left={"20%"} right={"20%"} top={"5%"}>
           <Number>47</Number>
           <Number>24</Number>
-          <Number>3</Number>
+          <Number>4</Number>
         </Line>
 
-        <Line left={"30%"} right={"30%"} bottom={"30%"}>
-          <Number>43</Number>
+        <Line left={"28%"} right={"28%"} bottom={"34%"}>
           <Number>17</Number>
+          <Number background={true}>11</Number>
         </Line>
 
-        <Line left={"50%"} bottom={"5%"} transform="translateX(-50%)">
-          <Number background={true}>17</Number>
+        <Line left={"50%"} bottom={"4%"} transform="translateX(-50%)">
+          <Number>43</Number>
         </Line>
       </Box>
       <Box className={"design-person__head-3"} src={head_3}>
         <Line left={"24%"} right={"24%"} top={"5%"}>
-          <Number>64</Number>
-          <Number background={true}>61</Number>
-          <Number>63</Number>
+          <Number background={true}>62</Number>
+          <Number>23</Number>
+          <Number>56</Number>
         </Line>
 
-        <Line left={"15%"} right={"15%"} top={"25%"}>
-          <Number>64</Number>
-          <Number>63</Number>
+        <Line left={"15%"} right={"15%"} top={"23%"}>
+          <Number>16</Number>
+          <Number>35</Number>
         </Line>
 
         <Line
@@ -51,18 +51,18 @@ const Head = () => {
           top={"50%"}
           transform={"translateY(-50%)"}
         >
-          <Number>64</Number>
-          <Number>63</Number>
+          <Number>20</Number>
+          <Number background={true}>12</Number>
         </Line>
 
-        <Line left={"15%"} right={"15%"} bottom={"25%"}>
-          <Number end={true}>63</Number>
+        <Line left={"15%"} right={"15%"} bottom={"23%"}>
+          <Number end={true}>45</Number>
         </Line>
 
         <Line left={"24%"} right={"24%"} bottom={"5%"}>
-          <Number background={true}>64</Number>
-          <Number background={true}>61</Number>
-          <Number>63</Number>
+          <Number background={true}>31</Number>
+          <Number background={true}>8</Number>
+          <Number>33</Number>
         </Line>
       </Box>
     </>

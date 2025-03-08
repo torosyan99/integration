@@ -8,9 +8,6 @@
 
 }
 
-
-
-
 .top__background {
     max-width: 1474px;
     position: absolute;
@@ -78,9 +75,9 @@
 }
 
 .top__date {
-    width: 100%;
     position: relative;
 }
+
 .top__calendar {
     position: absolute;
     color: #444;
@@ -115,7 +112,7 @@
 }
 
 @media (min-width:2000px) {
-    .top__background{
+    .top__background {
         width: 100%;
         max-width: 100%;
         height: 100%;
@@ -176,8 +173,7 @@
         font-size: 30px;
     }
 
-    .top__background {
-    }
+    .top__background {}
 
     .top__wrapper {
         margin-top: 25px;

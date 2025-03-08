@@ -155,32 +155,32 @@ const Circle = ({ children }) => {
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "13.7%", left: "79.1%" }}
+        style={{ bottom: "14%", left: "79.1%" }}
       >
         51-52,5
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "11.2%", left: "75.8%" }}
+        style={{ bottom: "12%", left: "75.8%" }}
       >
         52,5-53,5
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "9%", left: "72%" }}
+        style={{ bottom: "9.5%", left: "72%" }}
       >
         53,5-54
       </div>
       <div
         className="scheme-matrix__year scheme-matrix--fz "
-        style={{ bottom: "7.6%", left: "68.4%" }}
+        style={{ bottom: "7.5%", left: "68.4%" }}
       >
         55
         <span className="scheme-matrix__font">лет</span>
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "6.2%", left: "65%" }}
+        style={{ bottom: "6.5%", left: "65%" }}
       >
         56-57,5
       </div>
@@ -192,7 +192,7 @@ const Circle = ({ children }) => {
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "3.8%", left: "56.4%" }}
+        style={{ bottom: "4%", left: "56.4%" }}
       >
         58,5-59
       </div>
@@ -206,43 +206,43 @@ const Circle = ({ children }) => {
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "3.4%", left: "44.6%" }}
+        style={{ bottom: "4%", left: "44.2%" }}
       >
         61-62,5
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "4.4%", left: "40.5%" }}
+        style={{ bottom: "5%", left: "40.5%" }}
       >
         62,5-63,5
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "5.5%", left: "36%" }}
+        style={{ bottom: "6.5%", left: "36%" }}
       >
         63,5-64
       </div>
       <div
         className="scheme-matrix__year scheme-matrix--fz"
-        style={{ bottom: "7.4%", left: "32.2%" }}
+        style={{ bottom: "7.5%", left: "32.2%" }}
       >
         65 <span className="scheme-matrix__font"> лет</span>
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "8.6%", left: "28.5%" }}
+        style={{ bottom: "9%", left: "28.5%" }}
       >
         66-67,5
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "11.2%", left: "24.5%" }}
+        style={{ bottom: "12%", left: "24.5%" }}
       >
         67,5-68,5
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "13.5%", left: "21.5%" }}
+        style={{ bottom: "14%", left: "21.5%" }}
       >
         68,5-69
       </div>
@@ -256,7 +256,7 @@ const Circle = ({ children }) => {
       </div>
       <div
         className="scheme-matrix__year"
-        style={{ bottom: "21.6%", left: "13%" }}
+        style={{ bottom: "22.5%", left: "12.6%" }}
       >
         71-72,5
       </div>

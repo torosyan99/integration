@@ -179,11 +179,12 @@
     }
 
     .decoding__points {
-        gap: 0 10px;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
     .decoding__point {
-        gap: 0 10px;
+        gap:  10px;
     }
 
     .decoding__point svg {

@@ -19,66 +19,65 @@ const Center = () => {
         </Line>
 
         <Line left={"25%"} right={"25%"} top={"20%"}>
-          <Number>1</Number>
-          <Number>5</Number>
+          <Number>7</Number>
+          <Number>13</Number>
         </Line>
 
         <Line left={"5%"} right={"5%"} top={"50%"} transform="translateY(-50%)">
-          <Number>1</Number>
-          <Number>5</Number>
+          <Number>10</Number>
+          <Number background={true}>25</Number>
         </Line>
         <Line left={"25%"} right={"25%"} bottom={"20%"}>
-          <Number background={true}>1</Number>
-          <Number background={true}>5</Number>
+          <Number background={true}>15</Number>
+          <Number background={true}>46</Number>
         </Line>
 
         <Line left={"50%"} transform="translateX(-50%)" bottom={"5%"}>
-          <Number background={true}>1</Number>
+          <Number background={true}>2</Number>
         </Line>
       </Box>
 
       <Box src={center_2} className={"design-person__center-2"}>
-        <Number absolute={true} top={"10%"} left="30%">
+        <Number absolute={true} top={"10%"} left="28%">
           51
         </Number>
 
-        <Number absolute={true} top={"20%"} right="20%">
-          51
+        <Number absolute={true} top={"20%"} right="18%">
+          21
         </Number>
 
         <Number
           absolute={true}
           top={"50%"}
-          transform={"translateY(-50%)"}
-          left="20%"
+          left="8%"
         >
-          51
+          26
         </Number>
         <Number absolute={true} bottom={"10%"} right="20%">
-          51
+          40
         </Number>
       </Box>
       <Box src={center_3} className={"design-person__center-3"}>
         <Line left={"50%"} transform="translateX(-50%)" top={"5%"}>
-          <Number>1</Number>
+          <Number>14</Number>
         </Line>
-        <Line left={"28%"} right={"28%"} top={"12%"}>
-          <Number background={true}>1</Number>
-          <Number>1</Number>
-        </Line>
-
-        <Line left={"15%"} right={"15%"} top={"30%"}>
-          <Number>1</Number>
+        <Line left={"20%"} right={"20%"} top={"12%"}>
+          <Number background={true}>5</Number>
+          <Number>29</Number>
         </Line>
 
-        <Line left={"15%"} right={"15%"} bottom={"30%"}>
-          <Number background={true}>1</Number>
-          <Number>1</Number>
+        <Line left={"9%"} right={"9%"} top={"27%"}>
+          <Number>34</Number>
         </Line>
 
-        <Line left={"28%"} right={"32%"} bottom={"12%"}>
-          <Number background={true}>1</Number>
-          <Number>1</Number>
+        <Line left={"9%"} right={"9%"} bottom={"27%"}>
+          <Number background={true}>27</Number>
+          <Number>59</Number>
+        </Line>
+
+        <Line left={"20%"} right={"20%"} bottom={"12%"}>
+          <Number>42</Number>
+          <Number background={true}>9</Number>
         </Line>
 
         <Number
@@ -86,21 +85,22 @@ const Center = () => {
           left={"50%"}
           transform="translateX(-50%)"
           bottom={"5%"}
+          background={true}
         >
-          1
+          3
         </Number>
       </Box>
       <Box src={center_4} className={"design-person__center-4"}>
-        <Line top="5%" bottom="5%" right="5%" column={true}>
+        <Line top="6%" bottom="6%" right="5%" column={true}>
           <Number>36</Number>
           <Number>30</Number>
         </Line>
 
-        <Line top="15%" bottom="15%" right="28%" column={true}>
+        <Line top="16%" bottom="16%" right="28%" column={true}>
           <Number>36</Number>
           <Number background={true}>30</Number>
         </Line>
-        <Line top="25%" bottom="25%" right="50%" column={true}>
+        <Line top="26%" bottom="26%" right="50%" column={true}>
           <Number>37</Number>
           <Number background={true}>49</Number>
         </Line>
@@ -115,15 +115,15 @@ const Center = () => {
         </Number>
       </Box>
       <Box src={center_5} className={"design-person__center-5"}>
-        <Line top="5%" bottom="5%" left="5%" column={true}>
+        <Line top="6%" bottom="6%" left="5%" column={true}>
           <Number>36</Number>
           <Number>30</Number>
         </Line>
-        <Line top="15%" bottom="15%" left="28%" column={true}>
+        <Line top="16%" bottom="16%" left="28%" column={true}>
           <Number>37</Number>
           <Number background={true}>49</Number>
         </Line>
-        <Line top="25%" bottom="25%" left="50%" column={true}>
+        <Line top="26%" bottom="26%" left="50%" column={true}>
           <Number>37</Number>
           <Number background={true}>49</Number>
         </Line>
@@ -144,17 +144,17 @@ const Center = () => {
           <Number>30</Number>
         </Line>
 
-        <Line top="20%" right="5%" left="5%">
+        <Line top="24%" right="5%" left="5%">
           <Number>36</Number>
           <Number>30</Number>
         </Line>
 
-        <Line top="35%" right="5%" left="5%">
+        <Line top="46%" right="5%" left="5%">
           <Number>36</Number>
           <Number>30</Number>
         </Line>
 
-        <Line top="50%" right="5%" left="5%">
+        <Line top="72%" right="5%" left="5%">
           <Number>36</Number>
           <Number>30</Number>
         </Line>

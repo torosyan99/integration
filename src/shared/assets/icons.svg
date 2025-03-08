@@ -299,7 +299,7 @@
     </symbol>
 
 
-    <symbol id='arrow-right-pink'  viewBox="0 0 39 18" >
+    <symbol id='arrow-right-pink' viewBox="0 0 39 18">
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M38.0746 10.1853C38.8788 9.39397 38.9138 8.94672 38.0746 8.121L30.6897 0.999163C29.7176 0.42804 28.9274 0.895948 28.9274 2.03131V4.89381H1.40195C0.653666 4.89381 0.0522461 5.48558 0.0522461 6.22185V12.0845C0.0522461 12.8207 0.653666 13.4194 1.40195 13.4194H28.9274V16.2819C28.9274 17.4172 29.7247 17.8783 30.6897 17.3141L38.0746 10.1784V10.1853Z"
             fill="url(#paint0_linear_406_57736)" />
@@ -311,6 +311,34 @@
             </linearGradient>
         </defs>
     </symbol>
+    <symbol id='arrow-right-yellow' viewBox="0 0 40 18" fill='none'>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M38.4637 10.1853C39.268 9.39397 39.3029 8.94672 38.4637 8.121L31.0789 0.999163C30.1068 0.42804 29.3166 0.895948 29.3166 2.03131V4.89381H1.79111C1.04283 4.89381 0.441406 5.48558 0.441406 6.22185V12.0845C0.441406 12.8207 1.04283 13.4194 1.79111 13.4194H29.3166V16.2819C29.3166 17.4172 30.1138 17.8783 31.0789 17.3141L38.4637 10.1784V10.1853Z"
+            fill="url(#paint0_linear_406_57775)" />
+        <defs>
+            <linearGradient id="paint0_linear_406_57775" x1="20.5705" y1="-14.6278" x2="16.2706"
+                y2="17.0965" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFD079" />
+                <stop offset="0.510417" stop-color="#FFE8BF" />
+                <stop offset="1" stop-color="#FFD079" />
+            </linearGradient>
+        </defs>
+    </symbol>
+    <symbol id='arrow-left-yellow' viewBox="0 0 40 18" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M1.05776 10.3025C0.253532 9.51116 0.218566 9.06391 1.05776 8.23819L8.44264 1.11635C9.41473 0.545228 10.2049 1.01314 10.2049 2.1485V5.011H37.7304C38.4787 5.011 39.0801 5.60276 39.0801 6.33903V12.2017C39.0801 12.9379 38.4787 13.5366 37.7304 13.5366H10.2049V16.3991C10.2049 17.5344 9.40768 17.9955 8.44264 17.4312L1.05776 10.2956V10.3025Z"
+            fill="url(#paint0_linear_406_57777)" />
+        <defs>
+            <linearGradient id="paint0_linear_406_57777" x1="20.5705" y1="-14.5106" x2="16.2706"
+                y2="17.2137" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFD079" />
+                <stop offset="0.510417" stop-color="#FFE8BF" />
+                <stop offset="1" stop-color="#FFD079" />
+            </linearGradient>
+        </defs>
+    </symbol>
+
+
     <symbol id='star-pink' viewBox="0 0 9 10" fill="none">
         <path
             d="M8.14772 1.93193H5.20782L4.11586 0L2.9399 1.93193H0L1.51195 4.53585L0 7.13976H2.9399L4.11586 9.07169L5.20782 7.13976H8.14772L6.71977 4.53585L8.14772 1.93193Z"

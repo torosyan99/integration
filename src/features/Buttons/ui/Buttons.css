@@ -33,3 +33,16 @@
 }
 
 
+
+@media (max-width:1000px) {
+    .buttons {
+        gap: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .buttons__item {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
