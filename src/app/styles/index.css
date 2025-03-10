@@ -37,6 +37,7 @@ body {
 
 .row__content {
     flex-grow: 1;
+    padding-top: 100px;
 }
 
 .row__content .container {

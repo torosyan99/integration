@@ -17,7 +17,7 @@
 
 .buttons__item.active {
     background: var(--button-background);
-    border: 0;
+    border: .5px solid transparent ;
     color: var(--button-color-2);
 }
 

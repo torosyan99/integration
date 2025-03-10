@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Info from "./Info";
 import { Buttons } from "../../../features/Buttons";
 import { DesignPerson } from "../../../features/DesignPerson";
+import { buttonsTop } from "../config/buttons";
 
 import "./Design.css";
 
 const Design = () => {
+  const [buttons,setButtons] = useState(buttonsTop)
+  const activeButton = buttons.find(item => item.active)
+  
   return (
     <section className="design">
       <p className="design__text">
-        Карта Дизайна Человека или Бодиграф - это точная схема
-        психоэнергетических способностей и слабостей человека. В ней заложена
-        подробная инструкция для вашей самореализации и освобождения ума от
-        деструктивных мыслей и решений.
+        {activeButton.text}
       </p>
 
-      <Buttons />
+      <Buttons buttons={buttons} setButtons={setButtons} />
       <div className="design__content">
         <Info />
         <DesignPerson className='design__person' />

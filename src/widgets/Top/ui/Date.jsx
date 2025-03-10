@@ -3,8 +3,8 @@ import Calendar from "react-calendar";
 
 import "react-calendar/dist/Calendar.css";
 
-const DateC = () => {
-  const [value, onChange] = useState(new Date("01.02.2003"));
+const Date = ({value,setValue}) => {
+
   const [show, setShow] = useState(false);
   const date = useMemo(() => value.getDate(), [value]);
   const month = useMemo(() => value.getMonth() + 1, [value]);
@@ -19,7 +19,7 @@ const DateC = () => {
       {show && (
         <Calendar
           className={"top__calendar"}
-          onChange={onChange}
+          onChange={setValue}
           value={value}
         />
       )}
@@ -27,4 +27,4 @@ const DateC = () => {
   );
 };
 
-export default DateC;
+export default Date;

@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+import { buttons } from "../config/buttons";
+import { classNames } from "../../../shared/lib/classNames/classNames";
 
 const Info = () => {
+  const [buttonsArray, setButtonsArray] = useState(buttons);
+  const [topLeftBorder, setBorder] = useState(false);
+  const active = buttonsArray.find(item => item.active)
+
+  const handleClick = (index) => {
+    if (index !== 0 && !topLeftBorder) {
+      setBorder(true);
+    } else if (index == 0 && topLeftBorder) {
+      setBorder(false);
+    }
+
+    const newArray = buttonsArray.map((item, i) => {
+      if (i === index) {
+        item.active = true;
+      } else item.active = false;
+      return item;
+    });
+
+    setButtonsArray(newArray);
+  };
+
   return (
     <div className="design__info">
       <div className="design__buttons">
-        <button className="design__button active">Рейв-карта</button>
-        <button className="design__button">Личность</button>
-        <button className="design__button">Дизайн</button>
-        <button className="design__button">Ложное “Я”</button>
+        {buttonsArray.map(({ name, active }, index) => (
+          <button
+            key={name}
+            className={classNames("design__button", [], { active })}
+            onClick={() => handleClick(index)}
+          >
+            {name}
+          </button>
+        ))}
       </div>
 
-      <div className="design__box">
+      <div className={classNames("design__box", [], { border: topLeftBorder })}>
         <div className="design__info-items">
           <div className="design__info-item">
             <p className="design__info-key">Тип личности</p>
@@ -55,11 +83,7 @@ const Info = () => {
         </div>
 
         <h3 className="design__info-title title">Проектор 6/2</h3>
-        <p className="design__info-text">
-          "Матрица Судьбы" — инновационная онлайн-платформа, предлагающая
-          уникальный подход к пониманию личной судьбы. Она позволяет
-          пользователям расшифровать{" "}
-        </p>
+        <p className="design__info-text">{active.text}</p>
       </div>
     </div>
   );

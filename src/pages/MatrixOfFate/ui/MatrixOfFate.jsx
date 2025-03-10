@@ -1,30 +1,26 @@
-import React from "react";
+import React, {  useState } from "react";
 import Form from "./Form";
 import { SchemeMatrix } from "../../../features/SchemeMatrix";
 import { Buttons } from "../../../features/Buttons";
+import { buttonsConfig } from "../config/buttons";
 
 import "./MatrixOfFate.css";
 
 const MatrixOfFate = () => {
+
+  const [buttons, setButtons] = useState(buttonsConfig)
+  const active = buttons.find(item => item.active)
   return (
     <section className="fate">
       <Form />
-      <Buttons />
+      <Buttons  buttons={buttons} setButtons={setButtons}/>
       <div className="fate__content">
         <div className="fate__wrapper">
           <h3 className="title fate__title">
-            Что такое <span> матрица судьбы?</span>
+            {active.title}
           </h3>
           <p className="fate__text">
-            "Матрица Судьбы" — инновационная онлайн-платформа, предлагающая
-            уникальный подход к пониманию личной судьбы. Она позволяет
-            пользователям расшифровать свои судьбоносные коды, обеспечивая
-            глубокие инсайты в различные аспекты их жизни. С помощью
-            интуитивного анализа и индивидуальной интерпретации, Матрица Судьбы
-            помогает увидеть скрытые возможности, истинные цели и пути личного
-            развития. Это мощное средство для тех, кто стремится к лучшему
-            пониманию самого себя и своего жизненного пути, помогая преодолевать
-            препятствия и достигать новых уровней успеха и удовлетворения.
+            {active.text}
           </p>
         </div>
         <div className="fate__scheme">

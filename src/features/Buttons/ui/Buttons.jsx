@@ -1,18 +1,33 @@
 import React from "react";
+import { classNames } from "../../../shared/lib/classNames/classNames";
 
 import "./Buttons.css";
 
-const Buttons = () => {
+const Buttons = ({ buttons, setButtons }) => {
+  const handleClick = (index) => {
+    const newButtons = buttons.map((item, i) => {
+      if (index == i) {
+        item.active = true;
+      } else {
+        item.active = false;
+      }
+
+      return item;
+    });
+
+    setButtons(newButtons)
+  };
   return (
     <div className="buttons">
-      <button className="buttons__item active">Рейв -карта</button>
-      <button className="buttons__item">Механика</button>
-      <button className="buttons__item">Переменные и PHS</button>
-      <button className="buttons__item">Ворота и линии</button>
-      <button className="buttons__item">Травмы</button>
-      <button className="buttons__item">Хологенетика</button>
-      <button className="buttons__item">Значимые даты</button>
-      <button className="buttons__item">Транзит</button>
+      {buttons.map((item, index) => (
+        <button
+          className={classNames("buttons__item", [], { active: item.active })}
+          key={item.name}
+          onClick={() => handleClick(index)}
+        >
+          {item.name}
+        </button>
+      ))}
     </div>
   );
 };

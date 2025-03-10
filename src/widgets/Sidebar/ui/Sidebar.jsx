@@ -17,7 +17,7 @@ const Sidebar = () => {
               display,
               mobile,
             })}
-            key={value}
+            key={path}
             to={path}
           >
             <Sprite icon={icon} width={25} height={25} />

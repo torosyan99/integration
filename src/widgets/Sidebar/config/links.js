@@ -16,8 +16,8 @@ export const links = [
     value: <>Дизайн  <span> человека</span></>,
   },{
     icon:"",
-    path:'/sa',
-    value:"icon",
+    path:'/',
+    value:"NEW",
     mobile:true
   },
   {
@@ -32,13 +32,13 @@ export const links = [
 },
 {
     icon: "sidebar-card",
-    path: "/",
+    path: "/ss",
     value: "Тарифы",
     display: true,
 },
 {
     icon: "sidebar-setting",
-    path: "/",
+    path: "/dd",
     value: "Настройки",
     display: true,
   }
